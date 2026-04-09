@@ -1,23 +1,44 @@
 body {
-    font-family: Arial;
+    font-family: sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
     text-align: center;
-    margin-top: 50px;
 }
 
-#btnBomba {
-    padding: 15px 30px;
-    font-size: 18px;
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.status {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.label {
+    color: #666;
+    font-size: 14px;
+}
+
+.btn-bomba {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
     border: none;
-    border-radius: 8px;
+    background: #28a745;
     color: white;
+    font-size: 18px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.desligado {
-    background-color: red;
-}
-
-.ligado {
-    background-color: green;
+.btn-bomba:hover {
+    background: #218838;
 }
