@@ -1,19 +1,17 @@
-let estado = false; // false = desligado | true = ligado
+let bombaLigada = false;
 
-const botao = document.getElementById("btnBomba");
+function toggleBomba() {
+    const botao = document.getElementById("btnBomba");
 
-botao.addEventListener("click", () => {
-    estado = !estado;
+    bombaLigada = !bombaLigada;
 
-    if (estado) {
+    if (bombaLigada) {
+        botao.innerText = "LIGADO";
         botao.classList.remove("desligado");
         botao.classList.add("ligado");
-        botao.innerText = "Ligado";
     } else {
+        botao.innerText = "DESLIGADO";
         botao.classList.remove("ligado");
         botao.classList.add("desligado");
-        botao.innerText = "Desligado";
     }
-
-    console.log("Bomba:", estado ? "Ligada" : "Desligada");
-});
+}
