@@ -33,12 +33,18 @@ h2 {
     padding: 15px;
     border-radius: 10px;
     border: none;
-    background: #28a745;
     color: white;
     font-size: 18px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.btn-bomba:hover {
-    background: #218838;
+/* 🔴 DESLIGADO */
+.desligado {
+    background: #dc3545;
+}
+
+/* 🟢 LIGADO */
+.ligado {
+    background: #28a745;
 }
