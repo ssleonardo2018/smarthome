@@ -2,21 +2,33 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Controle da Bomba</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Monitor - Saquarema</title>
 
-    <!-- Link do CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h2>Status da Bomba</h2>
+    <h2>Monitoramento Residencial</h2>
 
-    <button id="btnBomba" class="desligado">
-        Desligado
-    </button>
+    <div class="card">
+        <span class="label">Nível da Caixa D'água</span>
+        <div class="status">85%</div>
+    </div>
 
-    <!-- Link do JavaScript -->
+    <div class="card">
+        <span class="label">Consumo de Energia</span>
+        <div class="status">450 W</div>
+        <span class="label">Estimativa Mês: R$ 145,00</span>
+    </div>
+
+    <div class="card">
+        <span class="label">Controle da Bomba</span>
+        <button class="btn-bomba" onclick="ligarBomba()">LIGAR AGORA</button>
+    </div>
+
+    <!-- JS -->
     <script src="script.js"></script>
 </body>
 </html>
